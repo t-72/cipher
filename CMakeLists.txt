@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 3.14)
+project(cipher VERSION 1.0.0)
+add_subdirectory(atbash atbash)
+add_subdirectory(caesar caesar)
+add_subdirectory(cipher cipher)
