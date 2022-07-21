@@ -81,6 +81,9 @@ else()
         add_executable(${PROJECT_NAME}
             ${PROJECT_SOURCES}
         )
+        if(WIN32)
+            set_property(TARGET ${PROJECT_NAME} PROPERTY WIN32_EXECUTABLE ON)
+        endif()
     endif()
 
     qt5_create_translation(QM_FILES ${CMAKE_SOURCE_DIR} ${TS_FILES})
